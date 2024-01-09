@@ -68,4 +68,12 @@ public class MusicOrganizer
             System.out.println("valor no valido, entre el 0 y el "+(files.size()-1));
         }               
     }
+    
+    public boolean validIndex(int index){
+        boolean validIndex = false;
+        if (index >= 0 && index < files.size()){
+            validIndex = true;
+        }
+        return validIndex;
+    }
 }
