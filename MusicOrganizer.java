@@ -59,4 +59,13 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    public void checkIndex(int index){
+        if (files.size()== 0){
+            System.out.println("ERROR ya que la coleccion esta vacia");
+        }
+        else if (!(index >= 0 && index < files.size())){
+            System.out.println("valor no valido, entre el 0 y el "+(files.size()-1));
+        }               
+    }
 }
